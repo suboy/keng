@@ -19,7 +19,8 @@ void connectWifi() {
   byte mac[6];
   WiFi.begin ( ssid.c_str(), password.c_str() );
   WiFi.macAddress(mac);
-  Serial.println("MAC: ");
+  Serial.println("");
+  Serial.print("MAC: ");
   Serial.print(mac[0],HEX);
   Serial.print(":");
   Serial.print(mac[1],HEX);
